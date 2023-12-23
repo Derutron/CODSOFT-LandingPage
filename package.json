@@ -1,17 +1,17 @@
 {
-  "name": "landing-page",
+  "name": "codesoft-landingpage",
+  "homepage": "https://derutron.github.io/CODSOFT-LandingPage/",
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://derutron.github.io/CODSOFT-LandingPage/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
     "serve": "vite preview",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist",
+    "predeploy" : "npm run build",
+    "deploy" : "gh-pages -d dist",
     "build:css": "postcss src/styles.css -o public/build/tailwind.css"
   },
   "dependencies": {
