@@ -1,6 +1,6 @@
 {
   "name": "landing-page",
-  "homepage": "https://derutron.github.io/CODSOFT-Calculator/",
+  "homepage": "https://derutron.github.io/CODSOFT-LandingPage/",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -10,13 +10,17 @@
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
     "serve": "vite preview",
+    "predeploy" : "npm run build",
+    "deploy" : "gh-pages -d dist",
     "build:css": "postcss src/styles.css -o public/build/tailwind.css"
   },
   "dependencies": {
+    "@types/jspdf": "^2.0.0",
+    "jspdf": "^2.5.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-query": "^3.39.3",
-    "react-router-dom": "^6.20.1",
+    "react-router-dom": "^6.21.1",
     "react-use-cart": "^1.13.0",
     "vite-plugin-react": "^4.0.1"
   },
@@ -29,6 +33,7 @@
     "eslint-plugin-react": "^7.32.2",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.3",
+    "gh-pages": "^6.1.1",
     "postcss": "^8.4.31",
     "tailwindcss": "^3.3.5",
     "vite": "^4.4.5"
